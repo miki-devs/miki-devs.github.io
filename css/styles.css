@@ -1,0 +1,206 @@
+body {
+    font-family: "Montserrat", sans-serif !important;
+    background-color: #F2F7F2;
+    color: #1a1a1a;
+}
+
+/*NAVBAR*/
+
+.navbar {
+    background-color: #F2F7F2 !important; /* Color de fondo de la navbar */
+    color: #333333 !important;
+}
+
+nav.navbar .icon a.navbar-brand {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: start;
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
+}
+
+nav.navbar .icon a.navbar-brand i.fas.fa-newspaper {
+    width: 4rem;
+    height: 4rem;
+    background-color: #4CAF50;
+    border-style: solid;
+    border-width: 0 5%;
+    border-radius: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 160%;
+    margin-right: 1rem;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap !important;
+    justify-content: space-between;
+}
+
+.navbar-nav a {
+    font-family: "Montserrat", sans-serif !important;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.navbar-nav a i {
+    color: #333333 !important;
+    font-size: 120%;
+    margin-right: 2%;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav a:hover i {
+    color: #2A2F34;
+}
+
+.navbar-nav a.active i {
+    color: #1A1D21;
+}
+
+/*CARRUSEL*/
+
+.carousel-indicators button {
+    background-color: #333333 !important;
+}
+
+.carousel-item {
+    position: relative; /*ajuste para que las imágenes queden centradas y no se estiren */
+}
+
+.carousel-item img {
+    max-width: 100%;
+    max-height: 35rem;
+    height: auto;
+    object-fit: cover; /*asegura que las imágenes se recorten adecuadamente sin estirarse */
+}
+
+.carousel-caption { /*ajuste para el fondo de la caption */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2.5%;
+    border-radius: 0.5rem;
+}
+
+.carousel-caption h5 {
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.carousel-caption p {
+    color: #1a1a1a;
+    font-weight: 400;
+}
+
+.carousel-caption a {
+    color: #0d0d0d;
+    text-decoration: none;
+    font-weight: 450;
+}
+
+/*FORMULARIO*/
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+    background-color: #FFDF71;
+    margin: 5%;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 10px rgba(153, 153, 153, 0.4);
+    max-width: 600px;
+}
+
+.form h2 {
+    text-align: center;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: #1A1D21;
+    margin-bottom: 5%;
+}
+
+.form h3 {
+    text-align: center;
+    font-weight: 400;
+}
+
+.form-group {
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 0.5em;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    border: 1px solid;
+    border-color: #1A1D21;
+    border-radius: 0.5rem;
+}
+
+.ad-file {
+    border-style: none !important;
+}
+
+.form-group.form-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group.form-button .btn {
+    font-weight: 600;
+    background-color: #FFAB00;
+}
+
+footer {
+    background-color: #3B5F41;
+    color: #F2F7F2;
+    font-size: small;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+}
+
+footer a {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    color: #F2F7F2;
+    text-decoration: none;
+    font-size: medium;
+}
+
+/*MEDIA QUERIES*/
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 400px) {
+    .carousel-caption {
+        display: none; /*ocultar captions en pantallas muy pequeñas */
+    }
+}
+
+/* Estilos para pantallas medianas y grandes */
+@media (min-width: 401px) {
+    .carousel-caption {
+        display: block !important; /*mostrar captions en pantallas medianas y grandes */
+    }
+}
