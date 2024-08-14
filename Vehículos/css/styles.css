@@ -117,6 +117,15 @@ body h2 {
     border-radius: 15px;
 }
 
+.wrapper-iframe {
+    position: relative;
+    overflow: hidden;
+    width: fit-content !important;
+    height: fit-content !important;
+    border-radius: 15px;
+    padding: 0.5em;
+}
+
 .cards p {
     text-align: center;
 }
