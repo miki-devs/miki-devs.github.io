@@ -106,9 +106,9 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="Vehículos/img/motorhome.jpg" class="d-block w-100" alt="motorhome">
+                <img src="Vehículos/img/tractor.jpg" class="d-block w-100" alt="motorhome">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Alquiler de motorhomes</h5>
+                    <h5>Se vende y alquila maquinaria</h5>
                     <p>Para más info <a href="Vehículos/vehiculos.html">click aquí</a></p>
                 </div>
             </div>
@@ -134,24 +134,24 @@
             <form action="#" method="post">
                 <div class="form-group">
                     <label for="name-ad">Título del aviso:</label><br>
-                    <input type="text" id="name-ad" name="name-ad" placeholder="Ingrese aquí el título." required>
+                    <input type="text" id="name-ad" name="name-ad" placeholder="Ingrese aquí el título." autocomplete="off" required>
                 </div>
                 <div class="form-group">
                     <label for="phone">Teléfono de contacto (sin 0 ni 15):</label><br>
-                    <input type="tel" id="phone" name="phone" placeholder="1234-567890" pattern="[0,9]{10}" required>
+                    <input type="tel" id="phone" name="phone" placeholder="1234 567890" pattern="[0-9]{10}" autocomplete="off" required>
                 </div>
                 <div class="form-group">
                     <label for="email">E-mail de contacto:</label><br>
-                    <input type="email" id="email" name="email" placeholder="Ingrese aquí su e-mail." required>
+                    <input type="email" id="email" name="email" placeholder="Ingrese aquí su e-mail." autocomplete="off" required>
                 </div>
                 <div class="form-group">
                     <label for="description">Descripción del aviso:</label><br>
                     <textarea name="description" id="description" rows="10" cols="30"
-                        placeholder="Ingrese aquí la descripción del aviso." required></textarea>
+                        placeholder="Ingrese aquí la descripción del aviso." autocomplete="off" required></textarea>
                 </div>
                 <div class="form-group">
                     <label for="ad-file">Seleccionar foto y/o video para publicar en el aviso:</label>
-                    <input type="file" id="ad-file" name="ad-file" class="ad-file" required>
+                    <input type="file" id="ad-file" name="ad-file" class="ad-file" autocomplete="off" required>
                 </div>
                 <div class="form-group form-button">
                     <button type="submit" class="btn">¡Quiero publicar!</button>
